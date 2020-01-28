@@ -1,0 +1,94 @@
+article.tweet-container {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: lighter;
+  /* box-shadow: 3px 3px black; */
+  background-color: #f4f1ec;
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 20px;
+}
+article.tweet-container:hover {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: bolder;
+  box-shadow: 3px 3px black;
+  background-color: #f4f1ec;
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 20px;
+}
+
+article.tweet-container > header {
+  background-color: #f4f1ec;
+  display: block;
+  height: 30%;
+  background-image: none;
+  color: black;
+  text-align: left;
+}
+
+article.tweet-container > footer {
+  position: absolute;
+  display: block;
+  color: black;
+  background-color: #f4f1ec;
+  float: left;
+  bottom: 0px;
+  left: 50px;
+  height: 20%;
+}
+
+div.oldTweet {
+  border-bottom: 3px solid black;
+  width: 95%;
+  display: inline-block;
+  text-align: left;
+  height: 40%;
+}
+
+span.user-name-small {
+  position: absolute;
+  /* font-size: 18px; */
+  top: -10px;
+  left: 60px;
+}
+
+span.user-handle-small {
+  position: absolute;
+  /* font-size: 12px; */
+  top: 0px;
+  right: 60px;
+}
+
+.avatar-small {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  height: 60px;
+}
+
+.fa-flag {
+  position: absolute;
+  right: 70px;
+  bottom: 10px;
+}
+
+.fa-retweet {
+  position: absolute;
+  right: 110px;
+  bottom: 10px;
+}
+.fa-heart {
+  position: absolute;
+  right: 150px;
+  bottom: 10px;
+}

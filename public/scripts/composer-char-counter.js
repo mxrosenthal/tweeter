@@ -15,7 +15,9 @@ $(document).ready(function() {
       $(this)
         .parent()
         .children('.counter')
-        .css('color', 'red');
+        .removeClass('counter')
+        .addClass('negative');
+      // .css('color', 'red'); //we don't want css in our js files.
     }
   });
 });
