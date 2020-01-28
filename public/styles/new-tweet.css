@@ -6,7 +6,7 @@ body {
   position: relative;
   display: block;
   border-bottom: 5px solid black;
-  margin-bottom: 50px;
+  margin-bottom: 50px; /* pushed text below input field down*/
 
   /* width: 100%; */
 }

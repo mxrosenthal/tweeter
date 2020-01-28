@@ -24,6 +24,10 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
@@ -49,6 +53,7 @@
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
           <textarea
+            id="newTweetTextArea"
             name="text"
             placeholder="What are you humming about?"
           ></textarea>
@@ -57,7 +62,7 @@
         </form>
       </section>
 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      bambam to popular belief, Lorem Ipsum is not simply random text. It has
       roots in a piece of classical Latin literature from 45 BC, making it over
       2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
       College in Virginia, looked up one of the more obscure Latin words,
