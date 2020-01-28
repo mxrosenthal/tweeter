@@ -1,0 +1,19 @@
+header {
+  /* background-color: darkgoldenrod; */
+  height: 400px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #005c42;
+  background-image: url('https://www.transparenttextures.com/patterns/black-scales.png');
+}
+
+.avatar {
+  padding-top: 1em;
+  /* margin-top: 20px; */
+}
+
+.user-name h2 {
+  color: red;
+  padding-bottom: 50px;
+  margin: 0;
+}

@@ -1,3 +1,5 @@
+/* @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css'); */
+
 nav {
   color: #ffffff;
   background-color: #4056a1;
@@ -5,10 +7,18 @@ nav {
   position: sticky;
   top: 0;
   height: 120px;
+  z-index: 2;
+  font-family: Bungee, cursive;
 }
 
-nav span {
-  font-family: Bungee;
+.logo {
   padding: 1.5em;
   float: left;
+  /* clear: right; */
+}
+
+.nav-tweet {
+  padding: 1.5em;
+  float: right;
+  /* clear: right; */
 }

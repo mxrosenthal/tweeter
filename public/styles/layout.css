@@ -21,6 +21,12 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: Source Sans Pro, sans-serif;
+  position: absolute;
+}
+
+.container {
+  margin: 0 5%;
+  text-align: center;
 }
 
 /*
