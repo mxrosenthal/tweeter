@@ -1,6 +1,6 @@
 $(document).ready(function() {
   let maxChar = 140;
-  $('textarea').keypress(function() {
+  $('textarea').keyup(function() {
     let lengthInput = $(this).val().length + 1;
     let lengthLeft = maxChar - lengthInput;
 
@@ -15,9 +15,13 @@ $(document).ready(function() {
       $(this)
         .parent()
         .children('.counter')
-        .removeClass('counter')
         .addClass('negative');
-      // .css('color', 'red'); //we don't want css in our js files.
+    }
+    if (lengthLeft >= 0) {
+      $(this)
+        .parent()
+        .children('.counter')
+        .removeClass('negative');
     }
   });
 });

@@ -7,8 +7,6 @@ body {
   display: block;
   border-bottom: 5px solid black;
   margin-bottom: 50px; /* pushed text below input field down*/
-
-  /* width: 100%; */
 }
 
 input {
@@ -16,8 +14,8 @@ input {
   display: inline-block;
   background-color: #4056a1;
   color: #ffffff;
-  float: left;
   margin-top: 8px;
+  float: left;
 }
 
 textarea {
@@ -25,8 +23,6 @@ textarea {
   width: 100%;
   border: hidden;
   background-color: #f4f1ec;
-
-  /* margin-bottom: 10px; */
 }
 
 .counter {
@@ -36,10 +32,4 @@ textarea {
 
 .negative {
   color: red;
-  margin-top: 5px;
-  float: right;
 }
-
-/* fieldset {
-  border: 0px;
-} */

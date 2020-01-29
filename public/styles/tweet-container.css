@@ -2,8 +2,7 @@ article.tweet-container {
   position: relative;
   border: 2px solid black;
   border-radius: 5px;
-  font-weight: lighter;
-  /* box-shadow: 3px 3px black; */
+  opacity: 0.8;
   background-color: #f4f1ec;
   display: block;
   width: 100%;
@@ -12,19 +11,10 @@ article.tweet-container {
   padding-right: 5%;
   margin-top: 20px;
 }
+
 article.tweet-container:hover {
-  position: relative;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-weight: bolder;
+  opacity: 1;
   box-shadow: 3px 3px black;
-  background-color: #f4f1ec;
-  display: block;
-  width: 100%;
-  height: 200px;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-top: 20px;
 }
 
 article.tweet-container > header {
@@ -57,16 +47,19 @@ div.oldTweet {
 
 span.user-name-small {
   position: absolute;
-  /* font-size: 18px; */
   top: -10px;
   left: 60px;
 }
 
-span.user-handle-small {
+.user-handle-small {
   position: absolute;
-  /* font-size: 12px; */
+  opacity: 0;
   top: 0px;
   right: 60px;
+}
+
+article.tweet-container:hover .user-handle-small {
+  opacity: 1;
 }
 
 .avatar-small {
