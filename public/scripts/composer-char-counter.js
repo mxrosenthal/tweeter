@@ -1,7 +1,7 @@
 $(document).ready(function() {
   let maxChar = 140;
   $('textarea').keyup(function() {
-    let lengthInput = $(this).val().length + 1;
+    let lengthInput = $(this).val().length;
     let lengthLeft = maxChar - lengthInput;
 
     //traverses the DOM from 'this' up to this' parent, then searches the children for
