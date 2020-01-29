@@ -1,28 +1,23 @@
 #tweet-container {
   position: relative;
-  /* border: 2px solid black; */
-  /* border-radius: 5px; */
   background-color: #f4f1ec;
   display: block;
   width: 100%;
   height: 200px;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
   margin-top: 20px;
 }
-
-/* #tweet-container:hover {
-  opacity: 1;
-  box-shadow: 3px 3px black;
-} */
 
 article.tweet {
   border: 2px solid black;
   border-radius: 5px;
+  /* height: 2em; */
   opacity: 0.8;
-
+  width: 100%;
   margin-bottom: 20px;
   padding: 20px;
+  word-wrap: normal;
 }
 
 article.tweet:hover {
@@ -41,6 +36,7 @@ footer.posted-tweet-footer {
   justify-content: space-between;
   align-items: center;
   color: black;
+  font-size: 0.75rem;
   background-color: #f4f1ec;
   padding-top: 8px;
 }
@@ -50,7 +46,7 @@ div.input-tweet-body {
   border-bottom: 3px solid black;
   width: 100%;
   text-align: left;
-  height: 2em;
+  /* height: 2em; */
   margin-top: 1.5em;
 }
 
@@ -92,5 +88,5 @@ div.glyph {
 .fa-retweet {
   padding-right: 20px;
 }
-.fa-heart {
-}
+/* .fa-heart {
+} */

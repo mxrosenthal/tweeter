@@ -2,7 +2,7 @@ body {
   position: absolute;
 }
 
-.new-tweet {
+#new-tweet {
   position: relative;
   display: block;
   border-bottom: 5px solid black;
