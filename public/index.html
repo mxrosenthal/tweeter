@@ -42,7 +42,7 @@
       <span class="nav-tweet">Write a new Tweet</span>
     </nav>
 
-    <header>
+    <header class="nav">
       <div class="avatar">
         <img src="/images/profile-hex.png" />
       </div>
@@ -67,28 +67,35 @@
         </form>
       </section>
 
-      <article id="tweet-container">
-        <header>
-          <img class="avatar-small" src="/images/profile-hex.png" />
-          <span class="user-name-small">
-            <p>Your Name</p>
-          </span>
-          <span class="user-handle-small">
-            <p>@handle</p>
-          </span>
-        </header>
-        <div class="oldTweet">
-          Previously written tweets.. Presumably.
-        </div>
+      <section id="tweet-container">
+        <article class="tweet">
+          <header class="posted-tweet-header">
+            <div class="header-logo">
+              <img class="avatar-small" src="/images/profile-hex.png" />
+              <span class="user-name-small">
+                Your Name
+              </span>
+            </div>
+            <span class="user-handle-small">
+              @handle
+            </span>
+          </header>
 
-        <footer>
-          BOOM: FOOTER
-        </footer>
+          <div class="input-tweet-body">
+            Previously written tweets.. Presumably.
+          </div>
 
-        <i class="fas fa-flag"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="far fa-heart"></i>
-      </article>
+          <footer class="posted-tweet-footer">
+            BOOM: FOOTER
+
+            <div class="glyph">
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
     </main>
   </body>
 </html>
