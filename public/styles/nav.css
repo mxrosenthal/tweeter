@@ -1,7 +1,9 @@
 nav {
   color: #ffffff;
   background-color: #4056a1;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
   position: sticky;
   top: 0;
   height: 120px;
@@ -16,5 +18,16 @@ nav {
 
 .nav-tweet {
   padding: 1.5em;
-  float: right;
+}
+div.nav-glyph {
+  display: flex;
+  align-content: right;
+}
+.fa-angle-double-down {
+  padding-top: 10px;
+  opacity: 0.7;
+}
+
+.fa-angle-double-down:hover {
+  opacity: 1;
 }

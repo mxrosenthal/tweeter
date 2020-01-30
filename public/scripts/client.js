@@ -133,6 +133,7 @@ $(document).ready(function() {
           $('#newTweetTextArea')
             .val('')
             .focus();
+          $('.counter').text(140);
         }
       });
     }
@@ -152,4 +153,10 @@ $(document).ready(function() {
   };
 
   loadTweets();
+
+  $('#double-down').click(function() {
+    $('#new-tweet').slideDown('slow');
+
+    $('#newTweetTextArea').focus();
+  });
 });
