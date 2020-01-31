@@ -23,10 +23,36 @@ article.tweet:hover {
   box-shadow: 3px 3px black;
 }
 
-header.posted-tweet-header {
+.avatar-small {
+  left: 5px;
+  top: 5px;
+  height: 60px;
+}
+div.input-tweet-body {
   display: flex;
-  justify-content: space-between;
+  border-bottom: 3px solid black;
+  width: 100%;
+  text-align: left;
+  margin-top: 1.5em;
+}
+
+div.glyph {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+div.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.fa-flag {
+  padding-right: 20px;
+}
+
+.fa-retweet {
+  padding-right: 20px;
 }
 
 footer.posted-tweet-footer {
@@ -38,17 +64,9 @@ footer.posted-tweet-footer {
   background-color: #f4f1ec;
   padding-top: 8px;
 }
-
-div.input-tweet-body {
+header.posted-tweet-header {
   display: flex;
-  border-bottom: 3px solid black;
-  width: 100%;
-  text-align: left;
-  margin-top: 1.5em;
-}
-
-div.header-logo {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -60,24 +78,4 @@ div.header-logo {
 
 article.tweet:hover .user-handle-small {
   opacity: 1;
-}
-
-.avatar-small {
-  left: 5px;
-  top: 5px;
-  height: 60px;
-}
-
-div.glyph {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.fa-flag {
-  padding-right: 20px;
-}
-
-.fa-retweet {
-  padding-right: 20px;
 }

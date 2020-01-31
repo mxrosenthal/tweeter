@@ -6,25 +6,8 @@ nav {
   top: 0;
   height: 120px;
   width: 100vw;
-
   z-index: 2;
   font-family: Bungee, cursive;
-}
-
-.logo {
-  padding: 0.5em;
-  font-size: 40px;
-  color: white;
-}
-
-.nav-tweet {
-  color: white;
-}
-div.nav-glyph {
-  margin: 0.5em;
-  padding-right: 20px;
-  color: white;
-  text-align-last: center;
 }
 .fa-angle-double-down {
   padding-top: 10px;
@@ -36,17 +19,24 @@ div.nav-glyph {
   opacity: 1;
 }
 
+.nav-tweet {
+  color: white;
+}
+
+.nav-glyph {
+  margin: 0.5em;
+  padding-right: 20px;
+  color: white;
+  text-align-last: center;
+}
+.logo {
+  padding: 0.5em;
+  font-size: 40px;
+  color: white;
+}
+
 @media screen and (min-width: 1024px) {
   nav {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    position: sticky;
-    top: 0;
-    height: 120px;
-    width: 100vw;
     background-color: #4056a1;
-    z-index: 2;
-    font-family: Bungee, cursive;
   }
 }

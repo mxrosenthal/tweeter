@@ -39,50 +39,44 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="logo">tweeter</span>
-
       <div class="nav-glyph">
-               <span class="nav-tweet">Write a new Tweet</br>
-                <i id="double-down" class="fas fa-angle-double-down"></i>
-              </span>
-               </div>
-
-
+        <span class="nav-tweet">Write a new Tweet</br>
+          <i id="double-down" class="fas fa-angle-double-down"></i>
+        </span>
+      </div>
     </nav>
 
-      <div class="content-row">
-    <header class="nav">
-      <img src="/images/profile-hex.png" />
+    <div class="filler"></div> <!-- just here to take up space on the page.-->
 
-       <div class="username">Max Rosenthal</div>
-    
-    </header>
-
-    <!-- Page-specific (main) content here -->
+    <!--Personal avatar and name info-->
     <div class="content-row">
-    <main class="container">
-      <section id="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form id="submit-tweet" method="POST" action="/tweets">
-          <div id="tooLong"><span>&#9888;</span>
-            Too many characters in tweet.</div>
-          <div id="noText"><span>&#9888;</span>
-            Can't submit empty tweet.</div>
-          <textarea
-            id="newTweetTextArea"
-            name="text"
-            placeholder="What are you humming about?"
-          ></textarea>
-          
+      <header class="nav">
+        <img src="/images/profile-hex.png" />
+        <div class="username">Max Rosenthal</div>
+      </header>
 
-          <input type="submit" value="Tweet" />
-          <span class="counter">140</span>
-        </form>
-      </section>
+      <!-- Page-specific (main) content here -->
+      <div class="content-row">
+        <main class="container">
+          <section id="new-tweet">
+            <h2>Compose Tweet</h2>
+            <form id="submit-tweet" method="POST" action="/tweets">
+              <div id="tooLong"><span>&#9888;</span>Too many characters in tweet.</div>
+              <div id="noText"><span>&#9888;</span>Can't submit empty tweet.</div>
+              <textarea
+                id="newTweetTextArea"
+                name="text"
+                placeholder="What are you humming about?"
+              ></textarea>
+              <input type="submit" value="Tweet" />
+              <span class="counter">140</span>
+            </form>
+          </section>
 
-      <section id="tweet-container">
-        </article>
-      </section>
-    </div>
+        <!--jQuery loads submitted tweets here.-->  
+        <section id="tweet-container">
+        </section>
+      </div>
     </main>
   </body>
 </html>

@@ -1,30 +1,21 @@
-body {
-  position: absolute;
+#noText {
+  border: 2px solid red;
+  color: red;
+  display: none;
 }
 
 #new-tweet {
   position: relative;
   display: block;
-  /* word-break: break-word; */
   border-bottom: 5px solid black;
   margin-bottom: 50px; /* pushed text below input field down*/
   display: none;
 }
 
-input {
-  font-family: Bungee, cursive;
-  display: inline-block;
-  background-color: #4056a1;
-  color: #ffffff;
-  margin-top: 8px;
-  float: left;
-}
-
-textarea {
-  display: block;
-  width: 100%;
-  border: hidden;
-  background-color: #f4f1ec;
+#tooLong {
+  border: 2px solid red;
+  color: red;
+  display: none;
 }
 
 .counter {
@@ -36,13 +27,21 @@ textarea {
   color: red;
 }
 
-#tooLong {
-  border: 2px solid red;
-  color: red;
-  display: none;
+input {
+  font-family: Bungee, cursive;
+  display: inline-block;
+  background-color: #4056a1;
+  color: #ffffff;
+  margin-top: 8px;
+  float: left;
 }
-#noText {
-  border: 2px solid red;
-  color: red;
-  display: none;
+textarea {
+  display: block;
+  width: 100%;
+  border: hidden;
+  background-color: #f4f1ec;
+}
+
+body {
+  position: absolute;
 }
