@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready(function() {
   const createTweetElement = function(obj) {
     const username = obj.user.name;
@@ -29,15 +23,15 @@ $(document).ready(function() {
     }
 
     $header.append(`
-    <div class="header-logo">
-    <img class="avatar-small" src=${avatar} />
-    <span class="user-name-small">
-    ${username}
-    </span>
-    </div>
-    <span class="user-handle-small">
-    ${handle}
-    </span>`);
+      <div class="header-logo">
+        <img class="avatar-small" src=${avatar} />
+        <span class="user-name-small">
+        ${username}
+        </span>
+      </div>
+      <span class="user-handle-small">
+      ${handle}
+      </span>`);
 
     //appending input from the
     $div.append(`${input}`);
@@ -102,20 +96,12 @@ $(document).ready(function() {
     }
   };
 
-  // const renderLastTweet = function(tweets) {
-  //   const tweet = tweets.slice(-1);
-  //   const container = $('#tweet-container');
-  //   container.prepend(tweet);
-  // };
-
   //POST tweet TO the SERVER
   const $form = $('#submit-tweet');
   $form.on('submit', function(event) {
     event.preventDefault();
-    // console.log('form:', $form.serialize());
 
     const inputText = $('#newTweetTextArea').val();
-    console.log('inputText: ', inputText);
     if (inputText.length > 140) {
       $('#tooLong')
         .slideDown('slow')
@@ -133,7 +119,6 @@ $(document).ready(function() {
         data: $form.serialize(),
         success: data => {
           loadTweets();
-          console.log('data: ', data);
           $('#newTweetTextArea')
             .val('')
             .focus();
@@ -141,9 +126,11 @@ $(document).ready(function() {
 
           if (tooLong) {
             $('#tooLong').slideUp('slow');
+            tooLong = false;
           }
           if (noText) {
             $('#noText').slideUp('slow');
+            noText = false;
           }
         }
       });
@@ -152,7 +139,6 @@ $(document).ready(function() {
 
   //GET tweet FROM the SERVER
   const loadTweets = function() {
-    console.log('loading tweets');
     $.ajax({
       method: 'GET',
       url: '/tweets',
@@ -168,14 +154,9 @@ $(document).ready(function() {
   let tweetBox = false;
   $('#double-down').click(function() {
     if (tweetBox) {
-      //if tweetBox is open
-      $('#new-tweet').slideUp('slow'); //it will close
+      $('#new-tweet').slideUp('slow'); //if tweetBox is open it will close
       tweetBox = false;
-    } else {
-      //if tweetBox is closed
-      $('#new-tweet').slideDown('slow'); //it will open
-      $('#newTweetTextArea').focus();
-      tweetBox = true;
+
       if (tooLong) {
         //if there are error messages, slide them out of view if newtweet arrow is toggled.
         $('#tooLong').slideUp('slow');
@@ -185,6 +166,10 @@ $(document).ready(function() {
       if (noText) {
         $('#noText').slideUp('slow');
       }
+    } else {
+      $('#new-tweet').slideDown('slow'); //if tweetBox is closed it will open
+      $('#newTweetTextArea').focus();
+      tweetBox = true;
     }
   });
 });
