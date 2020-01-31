@@ -118,9 +118,17 @@ $(document).ready(function() {
     const inputText = $('#newTweetTextArea').val();
     console.log('inputText: ', inputText);
     if (inputText.length > 140) {
-      alert('Your message is too long.');
+      $('#tooLong')
+        .slideDown('slow')
+        .focus('#newTweetTextArea');
+      let tooLong = true;
     } else if (inputText.length === 0) {
-      alert("Can't submit empty Tweet.");
+      // $('#submit-tweet').click(function() {
+      $('#noText')
+        .slideDown('slow')
+        .focus('#newTweetTextArea');
+      let noText = true;
+      // });
     } else {
       $.ajax({
         method: 'POST',
@@ -134,6 +142,13 @@ $(document).ready(function() {
             .val('')
             .focus();
           $('.counter').text(140);
+
+          if (tooLong) {
+            $('#tooLong').slideUp('slow');
+          }
+          if (noText) {
+            $('#noText').slideUp('slow');
+          }
         }
       });
     }

@@ -5,6 +5,7 @@ body {
 #new-tweet {
   position: relative;
   display: block;
+  /* word-break: break-word; */
   border-bottom: 5px solid black;
   margin-bottom: 50px; /* pushed text below input field down*/
   display: none;
@@ -33,4 +34,15 @@ textarea {
 
 .negative {
   color: red;
+}
+
+#tooLong {
+  border: 2px solid red;
+  color: red;
+  display: none;
+}
+#noText {
+  border: 2px solid red;
+  color: red;
+  display: none;
 }

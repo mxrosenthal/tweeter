@@ -64,11 +64,17 @@
       <section id="new-tweet">
         <h2>Compose Tweet</h2>
         <form id="submit-tweet" method="POST" action="/tweets">
+          <div id="tooLong"><span>&#9888;</span>
+            Too many characters in tweet.</div>
+          <div id="noText"><span>&#9888;</span>
+            Can't submit empty tweet.</div>
           <textarea
             id="newTweetTextArea"
             name="text"
             placeholder="What are you humming about?"
           ></textarea>
+          
+
           <input type="submit" value="Tweet" />
           <span class="counter">140</span>
         </form>

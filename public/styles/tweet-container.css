@@ -12,6 +12,7 @@
 article.tweet {
   border: 2px solid black;
   border-radius: 5px;
+  word-break: break-all;
   /* height: 2em; */
   opacity: 0.8;
   width: 100%;
