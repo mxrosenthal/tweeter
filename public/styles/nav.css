@@ -1,33 +1,52 @@
 nav {
-  color: #ffffff;
-  background-color: #4056a1;
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  position: sticky;
+  align-items: center;
+  position: fixed;
   top: 0;
   height: 120px;
+  width: 100vw;
+
   z-index: 2;
   font-family: Bungee, cursive;
 }
 
 .logo {
-  padding: 1.5em;
-  float: left;
+  padding: 0.5em;
+  font-size: 40px;
+  color: white;
 }
 
 .nav-tweet {
-  padding: 1.5em;
+  color: white;
 }
 div.nav-glyph {
-  display: flex;
-  align-content: right;
+  margin: 0.5em;
+  padding-right: 20px;
+  color: white;
+  text-align-last: center;
 }
 .fa-angle-double-down {
   padding-top: 10px;
+  color: white;
   opacity: 0.7;
 }
 
 .fa-angle-double-down:hover {
   opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: sticky;
+    top: 0;
+    height: 120px;
+    width: 100vw;
+    background-color: #4056a1;
+    z-index: 2;
+    font-family: Bungee, cursive;
+  }
 }

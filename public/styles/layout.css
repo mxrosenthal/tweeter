@@ -33,3 +33,18 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 50vw;
+  }
+  .content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
