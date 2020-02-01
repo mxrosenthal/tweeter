@@ -106,12 +106,12 @@ $(document).ready(function() {
       $('#tooLong')
         .slideDown('slow')
         .focus('#newTweetTextArea');
-      let tooLong = true;
+      tooLong = true;
     } else if (inputText.length === 0) {
       $('#noText')
         .slideDown('slow')
         .focus('#newTweetTextArea');
-      let noText = true;
+      noText = true;
     } else {
       $.ajax({
         method: 'POST',
@@ -124,14 +124,11 @@ $(document).ready(function() {
             .focus();
           $('.counter').text(140);
 
-          if (tooLong) {
-            $('#tooLong').slideUp('slow');
-            tooLong = false;
-          }
-          if (noText) {
-            $('#noText').slideUp('slow');
-            noText = false;
-          }
+          //remove error messages.
+          $('#tooLong').slideUp('slow');
+          tooLong = false;
+          $('#noText').slideUp('slow');
+          noText = false;
         }
       });
     }
@@ -170,6 +167,11 @@ $(document).ready(function() {
       $('#new-tweet').slideDown('slow'); //if tweetBox is closed it will open
       $('#newTweetTextArea').focus();
       tweetBox = true;
+      //if there are error messages, slide them out of view if newtweet arrow is toggled.
+      $('#tooLong').slideUp('slow');
+      $('#newTweetTextArea').val('');
+      $('.counter').text(140);
+      $('#noText').slideUp('slow');
     }
   });
 });
